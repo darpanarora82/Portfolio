@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
-import { MainBodyTopComponent } from './main-body-top/main-body-top.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: MainBodyTopComponent },
+  { path: '', component: HomeComponent },
   { path: 'contact', component: ContactComponent }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
